@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class BrokenAppTest extends BaseIOTest {
     @Test
     void main(){
-        BrokenApp.main();
+        BrokenApp.main(null);
 
         assertEquals("fixMe\n", updateLineSpliterators(outContent.toString()));
     }
